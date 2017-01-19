@@ -1,0 +1,15 @@
+{{#each model as |contact|}}
+	<div>{{contact.name}}</div>
+	<div>{{contact.lastName}}</div>
+	<div>{{contact.num}}</div>
+{{/each}}
+	
+{{#link-to 'home'}}
+	go to home plx
+{{/link-to}}
+
+{{input type='text' value=name}}
+{{input type='text' value=lastName}}
+{{input type='text' value=num}}
+
+<button {{action 'addNewContact' name lastName num}}>add Contact</button>

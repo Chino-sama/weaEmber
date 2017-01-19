@@ -1,0 +1,12 @@
+{{#each model as |wea|}}
+	<div>{{wea.name}}</div>
+	<div>{{wea.suajLvl}}</div>
+{{/each}}
+{{#link-to 'weas'}}
+	go to weas plxxx
+{{/link-to}}
+
+{{input type='text' value=name}}
+{{input type='text' value=suajLvl}}
+
+<button {{action 'addNewWea' name suajLvl}}>add wea</button>
